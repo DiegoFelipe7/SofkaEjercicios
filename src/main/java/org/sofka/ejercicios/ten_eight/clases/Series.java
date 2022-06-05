@@ -1,0 +1,131 @@
+package org.sofka.ejercicios.ten_eight.clases;
+
+import org.sofka.ejercicios.ten_eight.interfaces.Deliverable;
+/**
+ * classes series with its attributes and methods which implements an interface
+ *
+ * @author Diego Felipe Munoz Mosquera  - diegofelipem99@gmail.com
+ * @version 1.0.0 29-05-2022
+ */
+public class Series implements Deliverable {
+    /**
+     * class attributes
+     */
+    private String title;
+    private int numberSeasons;
+    private boolean delivered;
+    private String genre;
+    private String creator;
+    /**
+     * default constructor
+     */
+    public Series() {
+        this.title = "";
+        this.numberSeasons = 3;
+        this.delivered = false;
+        this.genre = "";
+        this.creator = "";
+    }
+
+    /**
+     *  constructor who receives the title ,genre ,creator of a series
+     * @param title series
+     * @param genre series
+     * @param creator series
+     */
+
+    public Series(String title, String genre,String creator) {
+        this.title = title;
+        this.numberSeasons = 3;
+        this.delivered = false;
+        this.genre = genre;
+        this.creator = creator;
+
+    }
+
+    public Series(String title,int numberSeasons,String genre , String creator){
+        this.title = title;
+        this.numberSeasons = numberSeasons;
+        this.delivered = false;
+        this.genre = genre;
+        this.creator = creator;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getNumberSeasons() {
+        return numberSeasons;
+    }
+
+    public void setNumberSeasons(int numberSeasons) {
+        this.numberSeasons = numberSeasons;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getCreator() {
+        return creator;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    /**
+     *
+     * @return message with the values of the constructor
+     */
+    @Override
+    public String toString() {
+        return "Series " +
+                "title='" + title + '\'' +
+                ", numberSeasons=" + numberSeasons +
+                ", genre='" + genre + '\'' +
+                ", creator='" + creator + '\'';
+    }
+
+    /**
+     * interface method that changes delivery status
+     * @return delivered
+     */
+    @Override
+    public boolean deliver() {
+        return this.delivered=true;
+    }
+
+    /**
+     * interface method that changes delivery status
+     * @return delivered
+     */
+    @Override
+    public boolean returns() {
+        return this.delivered=false;
+    }
+
+    /**
+     *  method returns delivery
+     * @return delivered
+     */
+    @Override
+    public boolean isDelivered() {
+        return this.delivered;
+    }
+
+    @Override
+    public int compareTo(Object ob) {
+
+        return 0;
+    }
+}

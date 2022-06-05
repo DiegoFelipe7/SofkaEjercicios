@@ -5,20 +5,8 @@ n
 >src/main/java/org/sofka/utils/abstracts/MyScannerAbstract.java,b\b\bb7b59c733e1b7036bbdadf5269cd78877fcde8c
 \
 ,src/main/java/org/sofka/utils/MyScanner.java,7\7\7723927df572c554248d620aeb78c90dd477f35e
-h
-8src/main/java/org/sofka/ejercicios/ejercicio12/Main.java,6\4\640650a834c2e251340beb2d49100d533e7253f5
-z
-Jsrc/main/java/org/sofka/ejercicios/ejercicio18/Interfaces/Deliverable.java,1\1\11103e784d4d08a5bd7cac9a592f22a4d7256c42
-t
-Dsrc/main/java/org/sofka/ejercicios/ejercicio18/clases/VideoGame.java,3\0\30e47679afac9bdc4b2320c26f249acea32ac1e0
-q
-Asrc/main/java/org/sofka/ejercicios/ejercicio18/clases/Series.java,9\e\9e8145dea63224338520809abf25bcbce1837e54
-P
- src/main/java/org/sofka/App.java,2\f\2f690da08ea7a57b7a7b3aa88cd8bc5572bb8cda
 g
 7src/main/java/org/sofka/ejercicios/ejercicio6/Main.java,a\c\ac0ee6cea8bed6f3c0f190f2ce69f198bbd9f07b
-g
-7src/main/java/org/sofka/ejercicios/ejercicio1/Main.java,9\c\9cd0c59e057ffa6e5dd3c6648b24edfff5c26446
 g
 7src/main/java/org/sofka/ejercicios/ejercicio3/Main.java,2\a\2ac23e5d4905123017954bad18f90cf96994f260
 g
@@ -29,14 +17,6 @@ g
 7src/main/java/org/sofka/ejercicios/ejercicio2/Main.java,c\c\ccd474105d6819ec3def586e22c5ca153634f309
 g
 7src/main/java/org/sofka/ejercicios/ejercicio7/Main.java,e\e\eeabe068612fa15d9c5578d5ad0c6791a4b8377d
-g
-7src/main/java/org/sofka/ejercicios/ejercicio8/Main.java,7\2\7216acdafeedb10d04229264fcc58abdf55e5618
-g
-7src/main/java/org/sofka/ejercicios/ejercicio9/Main.java,a\0\a02930ee6482245d33061e4997b7bbaa2c916491
-h
-8src/main/java/org/sofka/ejercicios/ejercicio10/Main.java,7\7\774ff77eeae9a7e7303092f6ff27d16bf3894a39
-h
-8src/main/java/org/sofka/ejercicios/ejercicio13/Main.java,8\9\89b9621491b998c8e8b0b6acd9d2f2dcbd80b916
 h
 8src/main/java/org/sofka/ejercicios/ejercicio14/Main.java,4\0\40fedef0033e068cd94d067186ad324687ba4abd
 h
