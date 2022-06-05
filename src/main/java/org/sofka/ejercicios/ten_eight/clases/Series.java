@@ -1,6 +1,7 @@
 package org.sofka.ejercicios.ten_eight.clases;
 
 import org.sofka.ejercicios.ten_eight.interfaces.Deliverable;
+
 /**
  * classes series with its attributes and methods which implements an interface
  *
@@ -11,11 +12,12 @@ public class Series implements Deliverable {
     /**
      * class attributes
      */
-    private String title;
-    private int numberSeasons;
+    private final String title;
+    private final int numberSeasons;
     private boolean delivered;
-    private String genre;
-    private String creator;
+    private final String genre;
+    private final String creator;
+
     /**
      * default constructor
      */
@@ -28,13 +30,14 @@ public class Series implements Deliverable {
     }
 
     /**
-     *  constructor who receives the title ,genre ,creator of a series
-     * @param title series
-     * @param genre series
+     * constructor who receives the title ,genre ,creator of a series
+     *
+     * @param title   series
+     * @param genre   series
      * @param creator series
      */
 
-    public Series(String title, String genre,String creator) {
+    public Series(String title, String genre, String creator) {
         this.title = title;
         this.numberSeasons = 3;
         this.delivered = false;
@@ -43,7 +46,7 @@ public class Series implements Deliverable {
 
     }
 
-    public Series(String title,int numberSeasons,String genre , String creator){
+    public Series(String title, int numberSeasons, String genre, String creator) {
         this.title = title;
         this.numberSeasons = numberSeasons;
         this.delivered = false;
@@ -51,40 +54,12 @@ public class Series implements Deliverable {
         this.creator = creator;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
     public int getNumberSeasons() {
         return numberSeasons;
     }
 
-    public void setNumberSeasons(int numberSeasons) {
-        this.numberSeasons = numberSeasons;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public String getCreator() {
-        return creator;
-    }
-
-    public void setCreator(String creator) {
-        this.creator = creator;
-    }
-
     /**
-     *
      * @return message with the values of the constructor
      */
     @Override
@@ -98,24 +73,27 @@ public class Series implements Deliverable {
 
     /**
      * interface method that changes delivery status
+     *
      * @return delivered
      */
     @Override
     public boolean deliver() {
-        return this.delivered=true;
+        return this.delivered = true;
     }
 
     /**
      * interface method that changes delivery status
+     *
      * @return delivered
      */
     @Override
     public boolean returns() {
-        return this.delivered=false;
+        return this.delivered = false;
     }
 
     /**
-     *  method returns delivery
+     * method returns delivery
+     *
      * @return delivered
      */
     @Override
@@ -123,9 +101,20 @@ public class Series implements Deliverable {
         return this.delivered;
     }
 
+    /**
+     *method for determining the largest number of series
+     * @param ob  series
+     * @return  int
+     */
     @Override
     public int compareTo(Object ob) {
-
-        return 0;
+        Series series = (Series) ob;
+        if (this.getNumberSeasons() > series.getNumberSeasons()) {
+            return -1;
+        } else if (this.getNumberSeasons() == series.getNumberSeasons()) {
+            return 0;
+        } else {
+            return 1;
+        }
     }
 }

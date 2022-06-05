@@ -11,18 +11,18 @@ public class VideoGame implements Deliverable {
     /**
      * class attributes
      */
-    private String title;
-    private int estimatedHours;
+    private final String title;
+    private final int estimatedHours;
     private boolean delivered;
-    private String gender;
-    private String company;
+    private final String gender;
+    private final String company;
 
     /**
      * default constructor
      */
     public VideoGame(){
         this.title = "";
-        this.estimatedHours = 0;
+        this.estimatedHours = 10;
         this.delivered=false;
         this.gender = "";
         this.company = "";
@@ -51,38 +51,12 @@ public class VideoGame implements Deliverable {
     public VideoGame(String title, int estimatedHours) {
         this.title = title;
         this.estimatedHours = estimatedHours;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+        this.gender = "";
+        this.company = "";
     }
 
     public int getEstimatedHours() {
         return estimatedHours;
-    }
-
-    public void setEstimatedHours(int estimatedHours) {
-        this.estimatedHours = estimatedHours;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
     }
 
     /**
@@ -127,10 +101,22 @@ public class VideoGame implements Deliverable {
         return this.delivered;
     }
 
+    /**
+     *method to determine the game with the most hours
+     * @param ob videogame
+     * @return int
+     */
     @Override
     public int compareTo(Object ob) {
+        VideoGame videoGame = (VideoGame) ob;
 
-    return 0;
+        if(this.estimatedHours> videoGame.getEstimatedHours()){
+            return -1;
+        }else if(this.estimatedHours== videoGame.getEstimatedHours()){
+            return 0;
+        }else {
+            return 1;
+        }
 
     }
 }

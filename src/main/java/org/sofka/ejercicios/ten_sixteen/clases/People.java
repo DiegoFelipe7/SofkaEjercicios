@@ -62,7 +62,7 @@ public class People {
 
     /**
      *method of sending information
-     * @param name
+     * @param name people
      */
 
     public void setName(String name) {
@@ -71,7 +71,7 @@ public class People {
 
     /**
      * method of sending information
-     * @param age
+     * @param age people
      */
     public void setAge(int age) {
         this.age = age;
@@ -79,7 +79,7 @@ public class People {
 
     /**
      * method of receiving information
-     * @return
+     * @return dni people
      */
     public int getDni() {
         return dni;
@@ -87,7 +87,7 @@ public class People {
 
     /**
      * method of sending information
-     * @param sex
+     * @param sex people
      */
     public void setSex(char sex) {
         this.sex = sex;
@@ -95,7 +95,7 @@ public class People {
 
     /**
      * method of sending information
-     * @param weight
+     * @param weight people
      */
 
     public void setWeight(int weight) {
@@ -104,15 +104,16 @@ public class People {
 
     /**
      * method of sending information
-     * @param height
+     * @param height people
      */
 
     public void setHeight(double height) {
         this.height = height;
     }
 
-    /**method that performs IMC calculations
-     * @return int with him to determine whether or not the person is at his or her ideal weight.
+    /**
+     * method that performs IMC calculations
+     * @return int
      */
     public int calculateIMC() {
         double equals = this.weight / Math.pow(this.height, this.height);
@@ -177,7 +178,7 @@ public class People {
     }
 
     /**
-     * metodo genera un valor aleatorio de 8 cifras
+     * method generating a random value of 8 digits
      *
      * @return double identification
      */
