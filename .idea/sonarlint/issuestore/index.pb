@@ -1,0 +1,25 @@
+
+]
+-src/main/java/org/sofka/utils/MyExeption.java,4\8\48e278b889b14d33a1dd9ac98a00c311ef67f6af
+n
+>src/main/java/org/sofka/utils/abstracts/MyScannerAbstract.java,b\b\bb7b59c733e1b7036bbdadf5269cd78877fcde8c
+\
+,src/main/java/org/sofka/utils/MyScanner.java,7\7\7723927df572c554248d620aeb78c90dd477f35e
+y
+Isrc/main/java/org/sofka/ejercicios/ejercicio17/clases/WashingMachine.java,b\b\bb4f4b038d18e0d1e5cb97712e8d0ea52aa64f44
+m
+=src/main/java/org/sofka/ejercicios/ejercicio17/clases/Tv.java,2\7\27d788a09ade14294b5321066dc89bcf24b16184
+u
+Esrc/main/java/org/sofka/ejercicios/ejercicio17/clases/Appliances.java,c\8\c8e9b1c2e6ee81feca0c37efc583b66e54c0a0b1
+m
+=src/main/java/org/sofka/ejercicios/ejercicio17/main/Main.java,4\5\4533960d837fefc9631f518230afb10fb0cde42d
+h
+8src/main/java/org/sofka/ejercicios/ejercicio12/Main.java,6\4\640650a834c2e251340beb2d49100d533e7253f5
+z
+Jsrc/main/java/org/sofka/ejercicios/ejercicio18/Interfaces/Deliverable.java,1\1\11103e784d4d08a5bd7cac9a592f22a4d7256c42
+t
+Dsrc/main/java/org/sofka/ejercicios/ejercicio18/clases/VideoGame.java,3\0\30e47679afac9bdc4b2320c26f249acea32ac1e0
+q
+Asrc/main/java/org/sofka/ejercicios/ejercicio18/clases/Series.java,9\e\9e8145dea63224338520809abf25bcbce1837e54
+P
+ src/main/java/org/sofka/App.java,2\f\2f690da08ea7a57b7a7b3aa88cd8bc5572bb8cda
