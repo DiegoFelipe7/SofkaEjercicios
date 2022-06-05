@@ -3,11 +3,15 @@ package org.sofka.ejercicios.ejercicio17.main;
 import org.sofka.ejercicios.ejercicio17.clases.Appliances;
 import org.sofka.ejercicios.ejercicio17.clases.Tv;
 import org.sofka.ejercicios.ejercicio17.clases.WashingMachine;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import org.jboss.logging.Logger;
+/**
+ * class to perform the registration of different appliances and calculate their final price
+ *
+ * @author Diego Felipe Munoz Mosquera  - diegofelipem99@gmail.com
+ * @version 1.0.0 29-05-2022
+ */
 
 public class Main {
     public static final Logger logger = Logger.getLogger("logger");
@@ -28,25 +32,27 @@ public class Main {
         priceAppliances(appliances);
     }
 
+    /**
+     *this method evaluates the price of different household appliances
+     * @param appliances receives a list of household appliance type objects
+     */
     public static void priceAppliances(List<Appliances> appliances) {
-        double AppliancesSum = 0;
-        double TvSum = 0;
-        double WashingMachineSum = 0;
+        double appliancesSum = 0;
+        double tvSum = 0;
+        double washingMachineSum = 0;
         for (Appliances appliance : appliances) {
-            if (appliance instanceof Appliances) {
-                AppliancesSum += appliance.endPrice();
-            }
+            appliancesSum+=appliance.endPrice();
             if (appliance instanceof Tv) {
-                TvSum += appliance.endPrice();
+                tvSum += appliance.endPrice();
             }
             if (appliance instanceof WashingMachine) {
-                WashingMachineSum += appliance.endPrice();
+                washingMachineSum += appliance.endPrice();
             }
             logger.info("price of household appliances : " + appliance.endPrice());
             logger.info("----------------Sum----------------");
-            logger.info("total number of household appliances : " + AppliancesSum);
-            logger.info("total number of televisions : " + TvSum);
-            logger.info("total number of washing machines : " + WashingMachineSum);
+            logger.info("total number of household appliances : " + appliancesSum);
+            logger.info("total number of televisions : " + tvSum);
+            logger.info("total number of washing machines : " + washingMachineSum);
 
         }
     }
